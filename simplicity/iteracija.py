@@ -46,6 +46,13 @@ def rus_style_filter(arr, num):
         print("Number not found")
         return None
 
+# find index
+def rus_style_index(arr, num):
+    print(f"We found number {num} at index {arr.index(num)} in array: {arr}")
+    return arr.index(num)
+
+
+
 
 if __name__ == "__main__":
     arr = [11, 22, 33, 55, 88, 96, 108, 121]
@@ -63,3 +70,6 @@ if __name__ == "__main__":
 
     print(f"*" * 72)
     print(f"Rus style filter: {rus_style_filter(arr, num)}")
+
+    print(f"*" * 72)
+    print(f"Rus style index: {rus_style_index(arr, num)}")
